@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans|Orbitron:900|Syncopate');
+		html, body{
+			margin: 0px;
+			padding: 0px;
+		}
+		.container{
+			max-width: 1000px;
+			margin: auto;
+		}
+		.header{
+			width: 100%;
+			background: #C0392B;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		.header .container{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+		}
+		.header .container div{
+			width: 40%;
+		}
+		.header .container .logo{
+			padding-top: 0px;
+		}
+		.header .container .logo img{
+			margin-top: 40px;
+			width: 60%;
+		}
+		.header .container .logo span{
+			color: #49525F;
+			text-align: left;
+			font-family: Orbitron;
+			font-weight: 900;
+			text-transform: uppercase;
+			font-size: 30px;
+		}
+		.header .container div{
+			padding-top: 70px;
+		}
+		.header .container div h1{
+			font-family: Syncopate;
+			font-size: 25px;
+			text-align: right;
+			text-transform: uppercase;
+			color: #fff;
+		}
+		.header .container div p{
+			font-family: Open Sans;
+			text-align: right;
+			font-size: 16px;
+			margin-top: 30px;
+		}
+		.content_tabs{
+			margin-top: 70px;
+		}
+		.content_tabs h2{
+			text-align: center;
+			font-family: Syncopate;
+			font-size: 40px;
+			color: #C0392B;
+		}
+		.content_tabs .container{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+		}
+		.content_tabs .container div{
+			width: 30%;
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			border: 2px solid #C0392B;
+			border-radius: 7px;
+			padding-bottom: 20px;
+			padding-top: 20px;
+		}
+		.content_tabs .container div img{
+			width: 60%;
+		}
+		.content_tabs .container div p{
+			font-family: Syncopate;
+			text-transform: uppercase;
+			margin-top: 20px;
+		}
+		.content_tabs .container div span{
+			display: inline-block;
+			width: 80%;
+			color: #565656;
+			font-family: Open Sans;
+			font-size: 14px;
+		}
+		.form{
+			background: #49525F;
+			padding-top: 60px;
+			text-align: center;
+			padding-bottom: 40px;
+		}
+			.form h3{
+				margin: 0;
+				text-align: center;
+				font-family: Syncopate;
+				font-size: 40px;
+				color: #fff;
+			}
+		.form form{
+			padding: 0px;
+		}
+		.form form input{
+				width: calc(50% - 4px);
+				margin: 0px;
+				outline: none;
+				border: none;
+				border: 1px solid transparent;
+				margin-top: 20px;
+				height: 40px;
+				text-transform: uppercase;
+				font-family: Open Sans;
+				text-align: center;
+				font-size: 16px;
+				transition-duration: .3s;
+		}
+		.form form input:first-child{
+			width: 100%;
+		}
+		.form form input:focus{
+			border: 1px solid #C0392B;
+		}
+		.submit{
+			outline: none;
+		height: 40px;
+		font-family: Open Sans;
+		font-size: 16px;
+		text-transform: uppercase;
+		border: none;
+		text-align: center;
+		margin-top: 40px;
+		border-radius: 5px;
+		border: 1px solid transparent;
+		transition-duration: .3s;
+		}
+		.submit:hover{
+			border: 1px solid #C0392B;
+			color: #C0392B;
+		}
+		@media screen and (max-width: 600px) {
+			.header .container{
+				-webkit-flex-direction: column;
+				-moz-flex-direction: column;
+				-ms-flex-direction: column;
+				-o-flex-direction: column;
+				flex-direction: column;
+			}
+			.header .container div{
+				width: 80%;
+				margin: auto;
+				text-align: center;
+			}
+			.header .container div h1, .header .container div p{
+				text-align: center;
+		}
+		.content_tabs .container{
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+			}
+			.content_tabs .container div{
+			width: 80%;
+			margin: auto;
+			margin-bottom: 30px;
+		}
+		.form form input{
+			width: 80% !important;
+		}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<span>footdream</span>
+				<img src="1497292626_Toy.svg" alt="toy">
+			</div>
+			<div>
+				<h1>make something incredible</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni ad dolorum eum labore, maiores quibusdam eius, laudantium est ea! Beatae!</p>
+			</div>
+		</div>
+	</div>
+	<div class="content_tabs">
+		<h2>supporting you</h2>
+		<div class="container">
+			<div>
+				<img src="1497292489_Basketball.svg" alt="basketball">
+				<p>responsive</p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quasi eveniet nisi saepe, veritatis accusantium commodi? Quam praesentium ex in.</span>
+			</div>
+			<div>
+				<img src="1497292530_footbal.svg" alt="football">
+				<p>easy to talk</p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non soluta, repudiandae laborum autem vero iusto iste fugiat recusandae sapiente at.</span>
+			</div>
+			<div>
+				<img src="1497292579_Baseball.svg" alt="baseball">
+				<p>no pressure</p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed iusto porro quo! Voluptatem amet sapiente cumque possimus, neque hic illum.</span>
+			</div>
+		</div>
+	</div>
+	<div class="form">
+		<h3>subscribe</h3>
+		<div class="container">
+			<form action="submit">
+				<input type="text" placeholder="your email">
+				<input type="text" placeholder="your second name">
+				<input type="text" placeholder="your name">
+			</form>
+			<input type="submit" value="subscribe" class="submit">
+		</div>
+	</div>
+</body>
+</html>

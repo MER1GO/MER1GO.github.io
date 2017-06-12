@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans|Wallpoet');
+		html, body{
+			margin: 0px;
+			padding: 0px;
+		}
+		.container{
+			max-width: 1000px;
+			margin: auto;
+		}
+		.header{
+			width: 100%;
+			background: #878787;
+			text-align: center;
+			padding-bottom: 30px;
+		}
+		.logo{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			width: 100%;
+			background: #25B7D3;
+			text-align: center;
+		}
+		.logo span{
+			font-family: Wallpoet;
+			font-size: 40px;
+			color: #878787;
+			text-transform: uppercase;
+		}
+		.header h1{
+			color: #25B7D3;
+			font-family: Bree Serif;
+			font-size: 30px;
+			text-transform: uppercase;
+			margin-top: 50px;
+		}
+		.header img{
+			width: 20%;
+			margin-top: 30px;
+		}
+		.header p{
+			color: #fff;
+			font-family: Open Sans;
+			font-size: 14px;
+		}
+		.content_tabs{
+			width: 100%;
+			background: #25B7D3;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		.content_tabs h2{
+			margin: 0px;
+			font-family: Bree Serif;
+			font-size: 35px;
+			color: #878787;
+			text-transform: uppercase;
+			text-align: center;
+
+		}
+		.content_tabs .container{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+		}
+		.content_tabs .container div{
+			width: 25%;
+			text-align: center;
+			margin-top: 50px;
+		}
+		.content_tabs .container div img{
+			width: 30%;
+			display: inline-block;
+			height: 120px;
+		}
+		.content_tabs .container div p{
+			color: #fff;
+			font-family: Bree Serif;
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+		.content_tabs .container div span{
+			font-family: Open Sans;
+			font-size: 14px;
+			color: #fff;
+		}
+		.form{
+			padding-top: 50px;
+			padding-bottom: 50px;
+			text-align: center;
+		}
+		.form h3{
+			font-family: Bree Serif;
+			font-size: 35px;
+			margin: 0px;
+			color: #878787;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.form form{
+			margin-top: 50px;
+		}
+		.form form input{
+			outline: none;
+		width: 100%;
+		height: 40px;
+		font-family: Open Sans;
+		font-size: 16px;
+		text-transform: uppercase;
+		border: none;
+		text-align: center;
+		margin-bottom: 40px;
+		border-radius: 5px;
+		border: 1px solid transparent;
+		transition-duration: .3s;
+		background: #25B7D3;
+		}
+		.form form input:focus{
+			background: #fff;
+		}
+		.submit{
+			outline: none;
+		font-family: Open Sans;
+		text-transform: uppercase;
+		font-size: 20px;
+		border: none;
+		text-align: center;
+		background: #25B7D3;
+		height: 50px;
+		width: 170px;
+		border-radius: 5px;
+		border: 1px solid transparent;
+		transition-duration: .3s;
+		cursor: pointer;
+		}
+		.submit:hover{
+			background: #fff;
+		}
+		@media screen and (max-width: 600px) {
+			.header p{
+				width: 80%;
+				margin: auto;
+			}
+			.content_tabs .container{
+				-webkit-flex-direction: column;
+				-moz-flex-direction: column;
+				-ms-flex-direction: column;
+				-o-flex-direction: column;
+				flex-direction: column;
+			}
+			.content_tabs .container div{
+				width: 80%;
+				margin: auto;
+				margin-top: 30px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<span>gamelab</span>
+		</div>
+		<div class="container">
+			<img src="1497295837_game.svg" alt="gamepad">
+			<h1>just let us make you happier</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, error eveniet consequatur corporis tenetur quod beatae dolores suscipit voluptates illum.</p>
+		</div>
+	</div>
+	<div class="content_tabs">
+		<h2>make choice</h2>
+		<div class="container">
+			<div>
+				<img src="1497295590_steam.svg" alt="steam">
+				<p>and steam</p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate, ab, unde fugiat aliquid sed!</span>
+			</div>
+			<div>
+				<img src="1497295635_ea.svg" alt="ea">
+				<p>and ea</p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium expedita facilis alias, corporis, molestias veritatis.</span>
+			</div>
+			<div>
+				<img src="1497295776_xbox-platform-console-games.svg" alt="xbox">
+				<p>and xbox</p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit excepturi a, aspernatur dolorum, sapiente maxime.</span>
+			</div>
+		</div>
+	</div>
+	<div class="form">
+		<h3>subscribe</h3>
+			<div class="container">
+				<form action="subscribe">
+					<input type="text" placeholder="your name">
+					<input type="text" placeholder="your second name">
+					<input type="text" placeholder="your email">
+				</form>
+				<input type="submit" value="subscribe" class="submit">
+			</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Days+One|Open+Sans|Yellowtail');
+		html, body{
+			margin: 0px;
+			padding: 0px;
+		}
+		.container{
+			max-width: 1000px;
+			margin: auto;
+		}
+	.header{
+		width: 100%;
+		background: #9a87e5;
+		text-align: center;
+	}
+	.logo{
+		text-align: center;
+		width: 100%;
+		background: #f7ffbf;
+	}
+	.logo span{
+		font-family: Yellowtail;
+		font-size: 45px;
+		text-transform: uppercase;
+		color:  #9a87e5;
+	}
+	.header .container{
+		margin-top: 50px;
+	}
+	.header h1{
+		text-align: center;
+		font-size: 40px;
+		font-family: Days One;
+		color: #f7ffbf;
+		text-transform: uppercase;
+		width: 90%;
+		margin: auto;
+		margin-top: 30px;
+	}
+	.header p{
+		font-family: Open Sans;
+		text-align: center;
+		font-size: 14px;
+		width: 90%;
+		margin: auto;
+		margin-top: 20px;
+		color: #fff;
+
+	}
+	.header img{
+		width: 30%;
+	}
+	.content_tabs{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.content_tabs h2{
+		text-align: center;
+		font-size: 40px;
+		font-family: Days One;
+		color: #9a87e5;
+		text-transform: uppercase;
+	}
+	.content_tabs .container{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+	.content_tabs .container div{
+		width: 25%;
+		background: #f7ffbf;
+		border-radius: 7px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	.content_tabs .container div p{
+		font-family: Days One;
+		font-size: 25px;
+		text-transform: uppercase;
+	}
+	.content_tabs .container div span{
+		font-family: Open Sans;
+		font-family: 14px;
+		width: 80%;
+		display: inline-block;
+	}
+	.content_tabs .container div img{
+		width: 60%;
+		margin-bottom: 20px;
+	}
+
+	.subscribe{
+		width: 100%;
+		background: #9a87e5;
+		padding-top: 50px;
+		padding-bottom: 20px;
+
+	}
+	.subscribe .container{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+	.subscribe .container div{
+		width: 40%;
+	}
+	.subscribe .container div:last-child input{
+		outline: none;
+		width: 100%;
+		height: 40px;
+		font-family: Open Sans;
+		font-size: 16px;
+		text-transform: uppercase;
+		border: none;
+		text-align: center;
+		margin-bottom: 40px;
+		border-radius: 5px;
+		border: 1px solid transparent;
+		transition-duration: .3s;
+	}
+	.subscribe .container div:last-child input:focus{
+		background: #f7ffbf;
+	}
+	.subscribe .container div:first-child{
+	text-align: center;
+	}
+	.subscribe .container div:first-child h3{
+		font-family: Days One;
+		font-size: 40px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	.subscribe .container div:first-child input{
+		outline: none;
+		font-family: Open Sans;
+		text-transform: uppercase;
+		font-size: 20px;
+		border: none;
+		text-align: center;
+		background: #fff;
+		height: 50px;
+		width: 170px;
+		border-radius: 5px;
+		border: 1px solid transparent;
+		transition-duration: .3s;
+		cursor: pointer;
+	}
+	.subscribe .container div:first-child input:hover{
+			background: #f7ffbf;
+	}
+	@media screen and (max-width: 600px) {
+		.content_tabs .container{
+			flex-direction: column;
+		}
+		.content_tabs .container div{
+			width: 80%;
+			margin: auto;
+			margin-bottom: 30px;
+		}
+		.subscribe .container{
+			-webkit-flex-direction: column-reverse;
+			-moz-flex-direction: column-reverse;
+			-ms-flex-direction: column-reverse;
+			-o-flex-direction: column-reverse;
+			flex-direction: column-reverse;
+		}
+		.subscribe .container div{
+			width: 80%;
+			margin: auto;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo"><span>beaty cheesy</span></div>
+		<div class="container">
+		<h1>try to do incredible creative thinks</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim earum eum voluptates exercitationem eos neque!</p>
+		<img src="1497288375_Cheese.svg" alt="cheese">
+		</div>
+	</div>
+	<div class="content_tabs">
+			<h2>stop sleeping!</h2>
+			<div class="container">
+				<div><p>wake up</p>
+				<img src="1497288902_clock.svg" alt="wake up">
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, id.</span></div>
+				<div><p>work</p>
+				<img src="1497288871_briefcase.svg" alt="work">
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ipsum!</span></div>
+				<div><p>build</p>
+				<img src="1497292626_Toy.svg" alt="build">
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quas.</span></div>
+			</div>
+		</div>
+
+		<div class="subscribe">
+			<div class="container">
+				<div>
+					<h3>subscribe</h3>
+					<input type="submit" value="subscribe">
+				</div>
+				<div>
+					<form action="subscribe">
+						<input type="text" placeholder="your name">
+						<input type="text" placeholder="youe second name">
+						<input type="text" placeholder="your email">
+					</form>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

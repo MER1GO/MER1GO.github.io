@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand:400,700');
+		html, body{
+			margin: 0px;
+			padding: 0px;
+		}
+		.container{
+			max-width: 1000px;
+			margin: auto;
+		}
+		.header{
+			background: #000;
+			width: 100%;
+			padding-bottom: 50px;
+			text-align: center;
+		}
+		.logo{
+			background: #fff;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: left;
+		}
+		.logo p{
+			font-family: Quicksand;
+			font-weight: 700;
+			font-size: 20px;
+			display: inline-block;
+			text-transform: uppercase;
+			position: relative;
+			top: -5px;
+		}
+		.logo img{
+			width: 5vw;
+			float: right;
+			position: relative;
+			vertical-align: middle;
+			top: 3px;
+			max-width: 50px;
+		}
+		.header h1{
+			text-align: center;
+			margin-top: 50px;
+			color: #fff;
+			font-family: Quicksand;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+		.header span{
+			font-family: Open Sans;
+			color: #939393;
+			font-size: 13px;
+			display: inline-block;
+			width: 80%;
+		
+		}
+		.content_tabs{
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		.content_tabs h2{
+			text-align: center;
+			font-family: Quicksand;
+			font-weight: 400;
+			font-size: 30px;
+		}
+		.content_tabs .container{
+			margin-top: 70px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-between;
+		}
+		.content_tabs .container div{
+			width: 25%;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		.content_tabs .container div img{
+			width: 40%;
+		}
+		.content_tabs .container div p{
+			font-size: 20px;
+			font-family: Quicksand;
+			font-weight: 400;
+
+		}
+		.content_tabs .container div span{
+			font-family: Open Sans;
+			font-size: 13px;
+			color: #383838;
+		}
+		.forms{
+			background: #000;
+			width: 100%;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			text-align: center;
+		}
+		.forms h3{
+			text-align: center;
+			font-family: Quicksand;
+			font-weight: 400;
+			color: #fff;
+			font-size: 30px;
+		}
+		.forms form{
+			text-align: center;
+		}
+		.forms form input{
+			width: 70%;
+			margin-bottom: 30px;
+			outline: none;
+			height: 40px;
+			font-family: Open Sans;
+			font-size: 16px;
+			text-transform: uppercase;
+			border: none;
+			text-align: center;
+			border: 1px solid transparent;
+			transition-duration: .3s;
+		}
+		.forms form input:focus{
+			background: #bfbfbf;
+		}
+		.call{
+			outline: none;
+		font-family: Open Sans;
+		text-transform: uppercase;
+		font-size: 20px;
+		border: none;
+		text-align: center;
+		height: 50px;
+		width: 60%;
+		border-radius: 5px;
+		border: 3px solid transparent;
+		transition-duration: .3s;
+		}
+		.call:hover{
+			border: 3px solid #bfbfbf; 
+		}
+			@media screen and (max-width: 600px){
+				.logo{
+					text-align: center;
+				}
+				.logo p{
+					display: block;
+				}
+				.logo img{
+					float: none;
+					width: 20%;
+				}
+				.content_tabs .container{
+					-webkit-flex-direction: column;
+					-moz-flex-direction: column;
+					-ms-flex-direction: column;
+					-o-flex-direction: column;
+					flex-direction: column;
+				}
+				.content_tabs .container div{
+					width: 80%;
+					margin: auto;
+					margin-top: 50px;
+				}
+			}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo"><div class="container"><p>apple helper.</p> <img src="1497298287_56-apple.svg" alt=""></div></div>
+		<div class="container">
+			<h1>making your devices better.</h1>
+		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod modi atque aut ullam qui obcaecati eaque provident tempore harum doloremque, eum ducimus ea! Itaque, recusandae.</span>
+		</div>
+	</div>
+	<div class="content_tabs">
+		<h2>our services.</h2>
+		<div class="container">
+			<div>
+				<img src="1497298228_airpods-not-connected.svg" alt="">
+				<p>airpods is</p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt esse facilis numquam commodi maxime magni aspernatur eveniet alias sint aliquam assumenda blanditiis voluptates ipsum culpa porro omnis atque itaque, expedita.</span>
+			</div>
+			<div>
+				<img src="1497298243_airpods-battery-low.svg" alt="">
+				<p>the best</p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, vel nihil numquam dolore optio repellat nulla iusto esse! Incidunt modi consequatur placeat inventore culpa velit, accusamus voluptate odit neque aperiam!</span>
+			</div>
+			<div>
+				<img src="1497298256_airpod-wire.svg" alt="">
+				<p>headphones</p>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis mollitia, voluptatibus distinctio fugit modi atque ipsam, incidunt, asperiores quibusdam nam perferendis fuga quisquam impedit voluptatem culpa quos! Quod, placeat, aliquid.</span>
+			</div>
+		</div>
+	</div>
+	<div class="forms">
+		<h3>contact us.</h3>
+		<div class="container">
+			<form action="">
+				<input type="text" placeholder="your name">
+				<input type="text" placeholder="your second name">
+				<input type="text" placeholder="your email">
+			</form>
+			<input type="submit" value="call me" class="call">
+		</div>
+	</div>
+</body>
+</html>
