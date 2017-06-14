@@ -4805,7 +4805,7 @@ p.form-line {
             overflow: hidden;
     position: fixed;
     height: 100%;
-    left: 280px;
+    left: 260px;
     }
     .wrap, .banner{
         width: auto;
@@ -4946,7 +4946,7 @@ p.form-line {
     }
     #menu-mobile{
     display: block;
-    width: 280px;
+    width: 260px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -4966,6 +4966,8 @@ p.form-line {
      #menu-mobile ul{
         /*height: 100%;*/
         display: block;
+        padding-left: 10px;
+        padding-right: 10px;
      }
     #menu-mobile li{
         width: 90%;
@@ -4978,6 +4980,11 @@ p.form-line {
     line-height: 50px;
     padding: 0;
     vertical-align: middle;
+    border-bottom: 1px solid #fff;
+    padding-left: 30px;
+    }
+    #menu-mobile li a{
+        text-decoration: none;
     }
     .games-block__thumbs .item .item-hover{
         display: none;
@@ -4988,6 +4995,8 @@ p.form-line {
     }
     .games-block__thumbs .item{
         width: 150px;
+        height: 140px;
+        vertical-align: top;
     }
     .btn-all-games{
         width: 118px;

@@ -87,7 +87,7 @@ $(function(){
         if (!$("body").hasClass('open')) {
             $("#menu-mobile").css('visibility', 'visible');
             $("body").addClass('open');
-            $(".top-menu").css('left', '280px')
+            $(".top-menu").css('left', '260px')
         }else if($("body").hasClass('open')){
             $("#menu-mobile").css('visibility', 'hidden');
             $("body, .top-menu").removeClass('open');
