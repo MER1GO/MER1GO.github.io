@@ -1,1 +1,0 @@
-if(document.images){(new Image(1,1)).src='img/__utm.gif?ref='+((typeof(encodeURIComponent)=='function')?encodeURIComponent(document.referrer):escape(document.referrer))+'&dat='+(new Date()).getTimezoneOffset()+'&uid=7885162';}
