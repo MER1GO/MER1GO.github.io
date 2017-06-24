@@ -31,11 +31,12 @@
 			<div class="header__menu-contacts">
 				<span>контакты</span><br>
 				<span class="number">+380 000 00 00</span><br>
-				<a href="">info@idesign.com</a>
+				<span class="number">+380 000 00 00</span>
 			</div>
 		</div>
 		<div class="header__logo">
 			<img src="img/logo.svg" alt="iDesign">
+			<p>проффесиональный дизайн интерьера</p>
 		</div>
 	</header>
 
@@ -131,7 +132,7 @@
 							<a href="img/kvart/3/6.png" class="none popup-gallery-3"></a>
 							<a href="img/kvart/3/7.png" class="none popup-gallery-3"></a>
 							<a href="img/kvart/3/8.png" class="none popup-gallery-3"></a>
-	
+
 						</div>
 					</div>
 				</div>
@@ -294,7 +295,7 @@
 </section>
 <a href="#form" class="price" id="form-btn">
 	<h1 class="h1">расчитать стоимость</h1>
-	<p>(от <span>650</span> грн за <span>м2</span>)</p>
+	<p>(от <span>550</span> грн за <span>м2</span>)</p>
 </a>
 <section class="out-jobs parallax-window-1" data-image-src="img/back/is-the-most-widely.jpg" data-parallax="scroll">
 	<h2>вы можете увидеть <br>наши работы вживую</h2>
@@ -306,11 +307,12 @@
 <section class="we-can">
 	<span class="we-can-logo">мы продумаем каждый элемент</span>
 	<br>
-	<span class="we-can-logo">вашего пространства</span>
+	<span class="we-can-logo" style="position: relative; right: 2px;">вашего будущего пространства</span>
 	<div class="we-can__icons">
 		<div class="we-can__icons__cont">
 			<div class="icon" style='background: url("img/battery.svg") no-repeat center' ></div>
 			<h5>звоните</h5>
+			<p>+380 000 00 00</p>
 			<p>+380 000 00 00</p>
 		</div>
 		<div class="we-can__icons__cont">
@@ -339,210 +341,218 @@
 			<input type="submit" class="submit">
 		</form>
 	</div>
+	<div class="form-call-wrapper">
+	<div class="form-call-btn">
+			<i class="form-call-phone-icon"></i>
+		</div>
+	</div><div class="form-call-wrapper">
+	<div class="form-call-btn" >
+		<i class="form-call-phone-icon" id="btn-call" href="#form"></i>
+	</div>
+</div>
 
-	
 
-	<link rel="stylesheet" href="css/main.min.css">
-	<script src="js/scripts.min.js"></script>
-	<script>
-		function initMap() {
-			var map = new google.maps.Map(document.getElementById('map'), {
-				zoom: 4,
-				minZoom: 2,
-				maxZoom: 6,
-				scrollwheel: 10,
-				center: {lat: -33, lng: 151},
-				disableDefaultUI: true,
-				styles: [
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
+<script>
+	function initMap() {
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 9,
+			minZoom: 7,
+			maxZoom: 9,
+			scrollwheel: 10,
+			center: {lat: 50.5, lng: 30.5},
+			disableDefaultUI: true,
+			styles: [
+			{
+				"elementType": "geometry",
+				"stylers": [
 				{
-					"elementType": "geometry",
-					"stylers": [
-					{
-						"color": "#212121"
-					}
-					]
-				},
-				{
-					"elementType": "labels.icon",
-					"stylers": [
-					{
-						"visibility": "off"
-					}
-					]
-				},
-				{
-					"elementType": "labels.text.fill",
-					"stylers": [
-					{
-						"color": "#757575"
-					}
-					]
-				},
-				{
-					"elementType": "labels.text.stroke",
-					"stylers": [
-					{
-						"color": "#212121"
-					}
-					]
-				},
-				{
-					"featureType": "administrative",
-					"elementType": "geometry",
-					"stylers": [
-					{
-						"color": "#757575"
-					}
-					]
-				},
-				{
-					"featureType": "administrative.country",
-					"elementType": "labels.text.fill",
-					"stylers": [
-					{
-						"color": "#9e9e9e"
-					}
-					]
-				},
-				{
-					"featureType": "administrative.land_parcel",
-					"stylers": [
-					{
-						"visibility": "off"
-					}
-					]
-				},
-				{
-					"featureType": "administrative.locality",
-					"elementType": "labels.text.fill",
-					"stylers": [
-					{
-						"color": "#bdbdbd"
-					}
-					]
-				},
-				{
-					"featureType": "poi",
-					"elementType": "labels.text.fill",
-					"stylers": [
-					{
-						"color": "#757575"
-					}
-					]
-				},
-				{
-					"featureType": "poi.park",
-					"elementType": "geometry",
-					"stylers": [
-					{
-						"color": "#181818"
-					}
-					]
-				},
-				{
-					"featureType": "poi.park",
-					"elementType": "labels.text.fill",
-					"stylers": [
-					{
-						"color": "#616161"
-					}
-					]
-				},
-				{
-					"featureType": "poi.park",
-					"elementType": "labels.text.stroke",
-					"stylers": [
-					{
-						"color": "#1b1b1b"
-					}
-					]
-				},
-				{
-					"featureType": "road",
-					"elementType": "geometry.fill",
-					"stylers": [
-					{
-						"color": "#2c2c2c"
-					}
-					]
-				},
-				{
-					"featureType": "road",
-					"elementType": "labels.text.fill",
-					"stylers": [
-					{
-						"color": "#8a8a8a"
-					}
-					]
-				},
-				{
-					"featureType": "road.arterial",
-					"elementType": "geometry",
-					"stylers": [
-					{
-						"color": "#373737"
-					}
-					]
-				},
-				{
-					"featureType": "road.highway",
-					"elementType": "geometry",
-					"stylers": [
-					{
-						"color": "#3c3c3c"
-					}
-					]
-				},
-				{
-					"featureType": "road.highway.controlled_access",
-					"elementType": "geometry",
-					"stylers": [
-					{
-						"color": "#4e4e4e"
-					}
-					]
-				},
-				{
-					"featureType": "road.local",
-					"elementType": "labels.text.fill",
-					"stylers": [
-					{
-						"color": "#616161"
-					}
-					]
-				},
-				{
-					"featureType": "transit",
-					"elementType": "labels.text.fill",
-					"stylers": [
-					{
-						"color": "#757575"
-					}
-					]
-				},
-				{
-					"featureType": "water",
-					"elementType": "geometry",
-					"stylers": [
-					{
-						"color": "#000000"
-					}
-					]
-				},
-				{
-					"featureType": "water",
-					"elementType": "labels.text.fill",
-					"stylers": [
-					{
-						"color": "#3d3d3d"
-					}
-					]
+					"color": "#212121"
 				}
 				]
-			});
-		}
-	</script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgGNPeswEVkxTKDjAHaQdRB4yC3Iu7Uyc&callback=initMap"></script>
+			},
+			{
+				"elementType": "labels.icon",
+				"stylers": [
+				{
+					"visibility": "off"
+				}
+				]
+			},
+			{
+				"elementType": "labels.text.fill",
+				"stylers": [
+				{
+					"color": "#757575"
+				}
+				]
+			},
+			{
+				"elementType": "labels.text.stroke",
+				"stylers": [
+				{
+					"color": "#212121"
+				}
+				]
+			},
+			{
+				"featureType": "administrative",
+				"elementType": "geometry",
+				"stylers": [
+				{
+					"color": "#757575"
+				}
+				]
+			},
+			{
+				"featureType": "administrative.country",
+				"elementType": "labels.text.fill",
+				"stylers": [
+				{
+					"color": "#9e9e9e"
+				}
+				]
+			},
+			{
+				"featureType": "administrative.land_parcel",
+				"stylers": [
+				{
+					"visibility": "off"
+				}
+				]
+			},
+			{
+				"featureType": "administrative.locality",
+				"elementType": "labels.text.fill",
+				"stylers": [
+				{
+					"color": "#bdbdbd"
+				}
+				]
+			},
+			{
+				"featureType": "poi",
+				"elementType": "labels.text.fill",
+				"stylers": [
+				{
+					"color": "#757575"
+				}
+				]
+			},
+			{
+				"featureType": "poi.park",
+				"elementType": "geometry",
+				"stylers": [
+				{
+					"color": "#181818"
+				}
+				]
+			},
+			{
+				"featureType": "poi.park",
+				"elementType": "labels.text.fill",
+				"stylers": [
+				{
+					"color": "#616161"
+				}
+				]
+			},
+			{
+				"featureType": "poi.park",
+				"elementType": "labels.text.stroke",
+				"stylers": [
+				{
+					"color": "#1b1b1b"
+				}
+				]
+			},
+			{
+				"featureType": "road",
+				"elementType": "geometry.fill",
+				"stylers": [
+				{
+					"color": "#2c2c2c"
+				}
+				]
+			},
+			{
+				"featureType": "road",
+				"elementType": "labels.text.fill",
+				"stylers": [
+				{
+					"color": "#8a8a8a"
+				}
+				]
+			},
+			{
+				"featureType": "road.arterial",
+				"elementType": "geometry",
+				"stylers": [
+				{
+					"color": "#373737"
+				}
+				]
+			},
+			{
+				"featureType": "road.highway",
+				"elementType": "geometry",
+				"stylers": [
+				{
+					"color": "#3c3c3c"
+				}
+				]
+			},
+			{
+				"featureType": "road.highway.controlled_access",
+				"elementType": "geometry",
+				"stylers": [
+				{
+					"color": "#4e4e4e"
+				}
+				]
+			},
+			{
+				"featureType": "road.local",
+				"elementType": "labels.text.fill",
+				"stylers": [
+				{
+					"color": "#616161"
+				}
+				]
+			},
+			{
+				"featureType": "transit",
+				"elementType": "labels.text.fill",
+				"stylers": [
+				{
+					"color": "#757575"
+				}
+				]
+			},
+			{
+				"featureType": "water",
+				"elementType": "geometry",
+				"stylers": [
+				{
+					"color": "#000000"
+				}
+				]
+			},
+			{
+				"featureType": "water",
+				"elementType": "labels.text.fill",
+				"stylers": [
+				{
+					"color": "#3d3d3d"
+				}
+				]
+			}
+			]
+		});
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgGNPeswEVkxTKDjAHaQdRB4yC3Iu7Uyc&callback=initMap"></script>
 
 
 </body>
