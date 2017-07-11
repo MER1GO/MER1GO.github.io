@@ -48,13 +48,15 @@
 Онлайн бронирование квартиры, онлайн Росреестр, онлайн сервис безопасных расчетов</p>
 				</div>
 				<div class="col-sm-4 offer__form">
-					<p>	Эксклюзиные предложения<br>на 16:35 (МСК)</p>
-					<form action="">
-						
-						<input type="checkbox" id="checkbox"> <label for="checkbox">В ипотеку от 8%</label>
-						<input type="text" placeholder="Колличество комнат" class="form-input" required>
-						<input type="text" placeholder="Ваше имя" class="form-input required">
-						<input type="text" placeholder="Ваша почта или телефон" class="form-input" required>
+					<p>	Эксклюзиные предложения<br>на <span id="hours"></span>:<span id="minute"></:span> (МСК)</p>
+					<form action="" id="header_form">
+						<input type="hidden" name="project_name" value="Вам квартиру">
+						<input type="hidden" name="admin_email" value="antonapraks@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка из головы сайта">
+						<input type="checkbox" id="checkbox" value="Yes" name="ipoteka"> <label for="checkbox">В ипотеку от 8%</label>
+						<input type="text" name="Rooms" placeholder="Колличество комнат" class="form-input" required>
+						<input type="text" name="Name" placeholder="Ваше имя" class="form-input required">
+						<input type="text"  name="email/phone" placeholder="Ваша почта или телефон" class="form-input" required>
 						<input type="submit" class="button" value="получить">
 					</form>
 				</div>
@@ -91,22 +93,19 @@
 			<div class="easy-container__tabs">
 				<div class="row">
 					<div class="col-sm-4">
-						<i></i>
 						<p>Бесплатный подбор новостроек в 19 городах</p>
 						<span>Больше не нужно тратить время на поиск данных! Мы предоставим Вам всю необходимую информацию: актуальные остатки квартир в новостройках, планировки, поэтажные планы, описание комплексов</span>
 					</div>
 					<div class="col-sm-4">
-						<i></i>
 						<p>Умный поиск квартиры <span></span>по 107 параметрам</p>
 						<span>Всего за несколько минут подберем для Вас лучшие варианты Вашей будущей квартиры. Месторасположение, этаж, инфраструктура района, школа, детские сады, транспортная доступность, скидки, акции, ипотека...</span>
 					</div>
 					<div class="col-sm-4">
-						<i></i>
 						<p>Онлайн бронирование Вашей будущей квартиры</p>
 						<span>Никогда еще бронирование квартиры не было так быстро, просто и удобно. Выбирайте лучшие предложения, отобранные Вами, и всего за 2 минуты мы поставим бронь раньше всех интересующих </span>
 					</div>
 				</div>
-				<a href="" class="button button--onpage easy-container__btn">получить предложения раньше всех</a>
+				<a href="#popup_form" id="early_btn" class="button button--onpage easy-container__btn">получить предложения раньше всех</a>
 			</div>
 		</div>
 	</section>
@@ -199,7 +198,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="text-center"><a href="" class="button button--onpage">узнать свою ставку</a></div>
+		<div class="text-center"><a href="#popup_form" id="bet-btn" class="button button--onpage">узнать свою ставку</a></div>
 	</section>
 	<section class="smarter">
 		<div class="container">
@@ -239,9 +238,12 @@
 					</ul>
 				</div>
 			</div>
-			<form action="">
-			<input type="text" required class="form-input" placeholder="Ваше имя">
-			<input type="text" required class="form-input" placeholder="Ваша почта или телефон">
+			<form action="" id="mid_form">
+			<input type="hidden" name="project_name" value="Вам квартиру">
+			<input type="hidden" name="admin_email" value="antonapraks@gmail.com">
+			<input type="hidden" name="form_subject" value="Заявка из Умнее! Лучше! Быстрее!">
+			<input type="text" required class="form-input" name="Name" placeholder="Ваше имя">
+			<input type="text" required class="form-input" name="email/phone" placeholder="Ваша почта или телефон">
 			<input type="submit" class="button">
 		</form>
 		</div>
@@ -263,6 +265,28 @@
 			</div>
 		</div>
 	</footer>
+	<div class="none">	
+		<div class="popup-form" id="popup_form">
+			<div class="popup-form__logo"></div>
+			<span>Агентство недвижимости</span>
+			<p>заполните, пожалуйста, заявку</p>
+			<form action="" id="popup_form_form">
+				<input type="hidden" name="project_name" value="Вам квартиру">
+				<input type="hidden" name="admin_email" value="antonapraks@gmail.com">
+				<input type="hidden" name="form_subject" value="Заявка из попап">
+				<input type="text" class="form-input" name="Name" placeholder="Ваше имя">
+				<input type="text" class="form-input" name="email/phone" placeholder="Ваша почта или телефон">
+				<input type="submit" class="button">
+			</form>
+		</div>
+
+	</div>
+	<div class="popup-thanks" id="popup_thanks">
+			<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+			<div class="popup-thanks__logo"></div>
+			<span>Агентство недвижимости</span>
+			<p><span>Спасибо Вам,</span><br>что выбрали нашу компанию. Мы уже готовим для Вас предложения, и в ближайшее время отправим Вам рассмотрение.</p>
+		</div>
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
 
