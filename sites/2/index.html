@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Spinner-up</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Gruppo|Luckiest+Guy|Prompt');
+		h1, p, header{
+			margin: 0px;
+			margin: 0px;
+		}
+		body, html{
+			font-size: 16px;
+			font-family: 'Gruppo';
+			font-weight: 300;
+			margin: 0px;
+			height: 0px;
+		}
+		li{
+			list-style: none;
+		}
+		.h1{
+			text-align: center;
+			text-transform: uppercase;
+			font-family: 'Prompt';
+			font-size: 35px;
+			letter-spacing: 4px;
+			color: #303030;
+		}
+		.container{
+			max-width: 980px;
+			margin: auto;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: space-around;
+		}
+		.header{
+			background: #6af9c2;
+			padding: 50px 0px;
+		}
+		.logo{
+			width: 30%;
+			text-align: center;
+		}
+		.top-content{
+			width: 50%;
+			padding-top: 50px;
+		}
+		.logo img{
+			width: 100%;
+			max-width: 100%;
+		}
+		.logo h1{
+			text-transform: uppercase;
+			color: #303030;
+			margin-top: -50px;
+			font-size: 40px;
+			font-family: "Luckiest Guy"
+		}
+		.top-content h2{
+			font-family: 'Prompt';
+			font-size: 25px;
+			color: #303030;
+		}
+		.content{
+			padding: 30px 0px;
+		}
+		.blocks{
+			width: 30%;
+			border: 3px dashed #303030;
+			border-radius: 5px;
+			padding: 50px 0px;
+		}
+		.blocks div{
+			width: 100%;
+			height: 100px;
+		}
+		.blocks h4{
+			text-align: center;
+			text-transform: uppercase;
+			font-family: Prompt;
+			font-size: 25px;
+			letter-spacing: 3px;
+			color: #303030;
+		}
+		.blocks li{
+			margin: 10px 0px;
+			font-size: 20px;
+			position: relative;
+		}
+		.blocks li:after{
+			content: "";
+			position: absolute;
+			left: -15px;
+			top: calc(50% - 3.5px);
+			width: 7px;
+			height: 7px;
+			background: #6AF9C2;
+			border-radius: 50%;
+		}
+		.form{
+			background: #FE8657;
+			padding: 30px 0px;
+			text-align: center;
+		}
+		.form form{
+			width: 60%;
+			margin: auto;
+		}
+		.form form input{
+			width: 90%;
+			margin: 10px 0px;
+			padding: 10px;
+			text-transform: uppercase;
+			font-family: 'Prompt';
+			border: 2px solid transparent;
+			transition-duration: .3s;
+		}
+		.form form input:focus{
+			border: 2px solid #303030;
+		}
+		.form form .submit{
+			background: #303030;
+			color: #FE8657;
+			transition-duration: .3s;
+			cursor: pointer;
+		}
+		.form form .submit:hover{
+			background: #FE8657;
+			color: #303030;
+		}
+	@media screen and (max-width: 600px) {
+			.header {
+    		padding-bottom: 50px;
+			}
+			.container{
+				-webkit-flex-direction: column;
+				-moz-flex-direction: column;
+				-ms-flex-direction: column;
+				-o-flex-direction: column;
+				flex-direction: column;
+			}
+		
+			.logo, .top-content, .blocks, .form form{
+				width: 90%;
+				margin: auto;
+			}
+			.top-content{
+				text-align: center;
+			}
+			.blocks{
+				margin: 10px auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<img src="sonic.svg" alt="logo">
+				<h1>spinner-up</h1>
+			</div>
+			<div class="top-content">
+				<h2>Next step of your business or social-network life</h2>
+				<p>Promotion of your social networks and projects. Help in the promotion of sites and social networks. Qualified specialists. 7 years experience</p>
+			</div>
+		</div>
+	</header>
+	<section class="content">
+		<h3 class="h1">our services</h3>
+		<div class="container">
+			<div class="blocks">
+				<div style='background: url("inst.svg") no-repeat center;'></div>
+				<h4>instagram</h4>
+				<ul>
+					<li>MassLikes</li>
+					<li>MassFollow</li>
+					<li>3 month for free</li>
+					<li>No bots</li>
+				</ul>
+			</div>
+			<div class="blocks">
+				<div style='background: url("sc.svg") no-repeat center;'></div>
+				<h4>soundcloud</h4>
+				<ul>
+					<li>MassLikes</li>
+					<li>MassFollow</li>
+					<li>1 month for free</li>
+					<li>No bots</li>
+				</ul>
+			</div>
+			<div class="blocks">
+				<div style='background: url("ytb.svg") no-repeat center;'></div>
+				<h4>youtube</h4>
+				<ul>
+					<li>MassLikes</li>
+					<li>MassFollow</li>
+					<li>2 month for free</li>
+					<li>No bots</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section class="form">
+		<h5 class="h1">leave an application</h5>
+		<div class="container">
+			<form action="">
+			<input type="text" placeholder="Your name">
+			<input type="email" placeholder="Your email">
+			<input type="tel" placeholder="Your phone">
+			<input type="submit" value="leave" class="submit">
+		</form>
+		</div>
+		
+	</section>
+</body>
+</html>
