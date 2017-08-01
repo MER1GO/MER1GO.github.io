@@ -25,7 +25,69 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 	<style>
 		<style>
-		.hamburger,.hamburger-inner,.hamburger-inner::after,.hamburger-inner::before{-webkit-transition-duration:.15s;-o-transition-duration:.15s;transition-duration:.15s}.hamburger{-webkit-transition-property:opacity,-webkit-filter;-o-transition-property:opacity,filter;-webkit-transition-duration:.15s;-o-transition-duration:.15s;-webkit-transition-timing-function:linear;-o-transition-timing-function:linear}.hamburger-inner,.hamburger-inner::after,.hamburger-inner::before{-webkit-transition-property:-webkit-transform;-o-transition-property:transform;-webkit-transition-duration:.15s;-o-transition-duration:.15s;-webkit-transition-timing-function:ease;-o-transition-timing-function:ease}.hamburger--3dx .hamburger-box{-webkit-perspective:80px;perspective:80px}.hamburger--3dx .hamburger-inner{-webkit-transition:background-color 0s .1s cubic-bezier(.645,.045,.355,1),-webkit-transform .15s cubic-bezier(.645,.045,.355,1);-o-transition:transform .15s cubic-bezier(.645,.045,.355,1),background-color 0s .1s cubic-bezier(.645,.045,.355,1)}.hamburger--3dx .hamburger-inner::after,.hamburger--3dx .hamburger-inner::before{-webkit-transition:-webkit-transform 0s .1s cubic-bezier(.645,.045,.355,1);-o-transition:transform 0s .1s cubic-bezier(.645,.045,.355,1)}.hamburger--3dx.is-active .hamburger-inner{-webkit-transform:rotateY(180deg)}.hamburger--3dx.is-active .hamburger-inner::before{-webkit-transform:translate3d(0,10px,0) rotate(45deg);transform:translate3d(0,10px,0) rotate(45deg)}.hamburger--3dx.is-active .hamburger-inner::after{-webkit-transform:translate3d(0,-10px,0) rotate(-45deg);transform:translate3d(0,-10px,0) rotate(-45deg)}body,div,h1,h2,h3,h4,h5,h6,html,p{margin:0;padding:0}a,a:focus,a:hover{text-decoration:none;border:none}img{max-width:100%}li{list-style:none}.menu_block{height:140px;line-height:140px;background-color:#f8f6f6!important}.logo{float:left}.logo_menu{width:100%;padding-top:30px;padding-bottom:30px}.logo span,.logo_menu span{font-family:big_nd;color:#696969;font-size:40px;font-weight:400;text-align:left}.slide,.slide h1,.slide h2{text-align:center}.slide h1,.slide h2{font-family:big_nd;color:#d6d5d5;letter-spacing:10px}.logo div{background:url(../img/Logo.png) 0 center no-repeat;width:29px;height:45px;margin-right:20px;margin-top:-15px}.menu_btn{float:right;line-height:120px}.humburger{z-index:99999}.hamburger-inner,.hamburger-inner:after,.hamburger-inner:before{background:#464645!important}.mm-panels>.mm-panel>.mm-listview:first-child,.mm-panels>.mm-panel>.mm-navbar+.mm-listview{margin-top:20px}.mm-navbar{border:none}.owl-carousel .owl-stage-outer,.slide a{width:100%}.head-slider{background:#313131;position:relative}.slide{background:#313131;padding-top:200px;padding-bottom:45px}.slide h1{font-size:72px}.slide h2{font-size:36px;font-weight:400}.slide a{color:#fff;font-size:36px;margin-top:150px;margin-bottom:10px}.slide span{font-family:roboto_bold;color:#fff;font-size:12px}.head-slider #next,.head-slider #prev{top:40%;color:#3a3939;font-size:120px;z-index:10000;position:absolute;pointer-events:auto;-webkit-transition-duration:.3s;-o-transition-duration:.3s;transition-duration:.3s}.head-slider #next:hover,.head-slider #prev:hover{color:#fff}.head-slider #prev{left:2%}.head-slider #next{right:2%}.hamburger{padding:15px;display:inline-block;cursor:pointer;transition-property:opacity,filter;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}.hamburger:hover{opacity:.7}.hamburger-box{width:40px;height:24px;display:inline-block;position:relative}.hamburger-inner{display:block;top:50%;margin-top:-2px}.hamburger-inner,.hamburger-inner::after,.hamburger-inner::before{width:40px;height:4px;background-color:#000;border-radius:4px;position:absolute;transition-property:transform;transition-timing-function:ease}.hamburger-inner::after,.hamburger-inner::before{content:"";display:block}.hamburger-inner::before{top:-10px}.hamburger-inner::after{bottom:-10px}.hamburger--3dx .hamburger-inner{transition:transform .15s cubic-bezier(.645,.045,.355,1),background-color 0s .1s cubic-bezier(.645,.045,.355,1)}.hamburger--3dx .hamburger-inner::after,.hamburger--3dx .hamburger-inner::before{transition:transform 0s .1s cubic-bezier(.645,.045,.355,1)}.hamburger--3dx.is-active .hamburger-inner{background-color:transparent!important;transform:rotateY(180deg)}
+		.hamburger{padding:15px;display:inline-block;cursor:pointer;-webkit-transition-property:opacity,-webkit-filter;transition-property:opacity,-webkit-filter;-o-transition-property:opacity,filter;transition-property:opacity,filter;transition-property:opacity,filter,-webkit-filter;-webkit-transition-duration:.15s;-o-transition-duration:.15s;transition-duration:.15s;-webkit-transition-timing-function:linear;-o-transition-timing-function:linear;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}.hamburger:hover{opacity:.7}.hamburger-box{width:40px;height:24px;display:inline-block;position:relative}.hamburger-inner{display:block;top:50%;margin-top:-2px}.hamburger-inner,.hamburger-inner::after,.hamburger-inner::before{width:40px;height:4px;background-color:#000;border-radius:4px;position:absolute;-webkit-transition-property:-webkit-transform;transition-property:-webkit-transform;-o-transition-property:transform;transition-property:transform;transition-property:transform, -webkit-transform;-webkit-transition-duration:.15s;-o-transition-duration:.15s;transition-duration:.15s;-webkit-transition-timing-function:ease;-o-transition-timing-function:ease;transition-timing-function:ease}.hamburger-inner::after,.hamburger-inner::before{content:"";display:block}.hamburger-inner::before{top:-10px}.hamburger-inner::after{bottom:-10px}.hamburger--3dx .hamburger-box{-webkit-perspective:80px;perspective:80px}.hamburger--3dx .hamburger-inner{-webkit-transition:background-color 0s .1s cubic-bezier(.645,.045,.355,1),-webkit-transform .15s cubic-bezier(.645,.045,.355,1);transition:background-color 0s .1s cubic-bezier(.645,.045,.355,1),-webkit-transform .15s cubic-bezier(.645,.045,.355,1);-o-transition:transform .15s cubic-bezier(.645,.045,.355,1),background-color 0s .1s cubic-bezier(.645,.045,.355,1);transition:transform .15s cubic-bezier(.645,.045,.355,1),background-color 0s .1s cubic-bezier(.645,.045,.355,1);transition:transform .15s cubic-bezier(.645,.045,.355,1),background-color 0s .1s cubic-bezier(.645,.045,.355,1),-webkit-transform .15s cubic-bezier(.645,.045,.355,1)}.hamburger--3dx .hamburger-inner::after,.hamburger--3dx .hamburger-inner::before{-webkit-transition:-webkit-transform 0s .1s cubic-bezier(.645,.045,.355,1);transition:-webkit-transform 0s .1s cubic-bezier(.645,.045,.355,1);-o-transition:transform 0s .1s cubic-bezier(.645,.045,.355,1);transition:transform 0s .1s cubic-bezier(.645,.045,.355,1);transition:transform 0s .1s cubic-bezier(.645,.045,.355,1), -webkit-transform 0s .1s cubic-bezier(.645,.045,.355,1)}.hamburger--3dx.is-active .hamburger-inner{background-color:transparent;-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}.hamburger--3dx.is-active .hamburger-inner::before{-webkit-transform:translate3d(0,10px,0) rotate(45deg);transform:translate3d(0,10px,0) rotate(45deg)}.hamburger--3dx.is-active .hamburger-inner::after{-webkit-transform:translate3d(0,-10px,0) rotate(-45deg);transform:translate3d(0,-10px,0) rotate(-45deg)}body,div,h1,h2,h3,h4,h5,h6,html,p{margin:0;padding:0}a,a:focus,a:hover{text-decoration:none;border:none}img{max-width:100%}li{list-style:none}.menu_block{height:140px;line-height:140px;background-color:#f8f6f6!important}.logo{float:left}.logo_menu{width:100%;padding-top:30px;padding-bottom:30px}.logo span,.logo_menu span{font-family:big_nd;color:#696969;font-size:40px;font-weight:400;text-align:left}.slide,.slide h1,.slide h2{text-align:center}.slide h1,.slide h2{font-family:big_nd;color:#d6d5d5;letter-spacing:10px}.logo div{background:url(../img/Logo.png) 0 center no-repeat;width:29px;height:45px;margin-right:20px;margin-top:-15px}.menu_btn{float:right;line-height:120px}.humburger{z-index:99999}.hamburger-inner,.hamburger-inner:after,.hamburger-inner:before{background:#464645!important}.mm-panels>.mm-panel>.mm-listview:first-child,.mm-panels>.mm-panel>.mm-navbar+.mm-listview{margin-top:20px}.mm-navbar{border:none}.hamburger-box{width:25px}.owl-carousel .owl-stage-outer,.slide a{width:100%}.hamburger-inner,.hamburger-inner::after,.hamburger-inner::before{height:3px}.head-slider{background:#313131;position:relative}.slide{background:#313131;padding-top:200px;padding-bottom:45px}.slide h1{font-size:72px}.slide h2{font-size:36px;font-weight:400}.slide a{color:#fff;font-size:36px;margin-top:150px;margin-bottom:10px}.slide span{font-family:roboto_bold;color:#fff;font-size:12px}.head-slider #next,.head-slider #prev{top:40%;color:#3a3939;font-size:120px;z-index:10000;position:absolute;pointer-events:auto;-webkit-transition-duration:.3s;-o-transition-duration:.3s;transition-duration:.3s}.head-slider #next:hover,.head-slider #prev:hover{color:#fff}.head-slider #prev{left:2%}.head-slider #next{right:2%}.hamburger-box{height: auto;}
+		.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+/*
+   * 3DX
+   */
+.hamburger--3dx .hamburger-box {
+  perspective: 80px; }
+
+.hamburger--3dx .hamburger-inner {
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .hamburger--3dx .hamburger-inner::before, .hamburger--3dx .hamburger-inner::after {
+    transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.hamburger--3dx.is-active .hamburger-inner {
+  background-color: transparent !important;
+  transform: rotateY(180deg); }
+  .hamburger--3dx.is-active .hamburger-inner::before {
+    transform: translate3d(0, 10px, 0) rotate(45deg); }
+  .hamburger--3dx.is-active .hamburger-inner::after {
+    transform: translate3d(0, -10px, 0) rotate(-45deg); }
 	</style>
 	</style>
 
@@ -81,6 +143,8 @@
 				
 			</div>
 		</div>
+		<span class="pe-7s-angle-left arrowLeft owl-prev" id="prev"></span>
+		<span class="pe-7s-angle-right arrowRight owl-next" id="next"></span>
 	</div>
 	<!-- -------------------------------------------------- -->
 	<nav id="menu">
@@ -96,14 +160,14 @@
 			<p class="default_zag">ABOUT US</p>
 			<p class="default_context">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			<div class="row">
-				<div class="col-md-4 about_us_tabs wow fadeInDown" data-wow-duration="0s">
+				<div class="col-md-4 about_us_tabs">
 					<div>
 						<i class="pe-7s-paint"></i>
 					<p>CREATIVE DESIGN</p>
 					<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do . . .</span>
 					</div>
 				</div>
-				<div class="col-md-4 about_us_tabs wow fadeInDown" data-wow-duration="2s">
+				<div class="col-md-4 about_us_tabs">
 					<div>
 						<i class="pe-7s-portfolio"></i>
 					<p>UNIQU PORTFOLIO</p>
@@ -111,7 +175,7 @@
 					</div>
 					
 				</div>
-				<div class="col-md-4 about_us_tabs wow fadeInDown" data-wow-duration="2s">
+				<div class="col-md-4 about_us_tabs">
 					<div>
 						<i class="pe-7s-loop"></i>
 					<p>INFINITE UPDATES</p>
@@ -365,10 +429,7 @@
 		</div>
 		
 	</div>
-<div id="google-map">
-	<div id="google-container"></div>
-
-</div>
+	<div class="map"><div class="map_mask"></div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d150.57900865617157!2d-7.70464212413269!3d52.853643499508344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1497247639072" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 
 
 	<footer class="footer">
@@ -377,211 +438,6 @@
 		<span>MADE WITH LOVE BY CREATIVEPRODUCT</span>
 	</footer>
 	<link rel="stylesheet" href="css/main.min.css">
-	<script>
-			var marker_url="img/Logo.png";
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('google-container'), {
-          center: {lat: 41.387663, lng: 2.126680},
-          zoom: 18,
-          disableDefaultUI: true,
-         styles: [
-			{
-				"elementType": "geometry",
-				"stylers": [
-				{
-					"color": "#212121"
-				}
-				]
-			},
-			{
-				"elementType": "labels.icon",
-				"stylers": [
-				{
-					"visibility": "off"
-				}
-				]
-			},
-			{
-				"elementType": "labels.text.fill",
-				"stylers": [
-				{
-					"color": "#757575"
-				}
-				]
-			},
-			{
-				"elementType": "labels.text.stroke",
-				"stylers": [
-				{
-					"color": "#212121"
-				}
-				]
-			},
-			{
-				"featureType": "administrative",
-				"elementType": "geometry",
-				"stylers": [
-				{
-					"color": "#757575"
-				}
-				]
-			},
-			{
-				"featureType": "administrative.country",
-				"elementType": "labels.text.fill",
-				"stylers": [
-				{
-					"color": "#9e9e9e"
-				}
-				]
-			},
-			{
-				"featureType": "administrative.land_parcel",
-				"stylers": [
-				{
-					"visibility": "off"
-				}
-				]
-			},
-			{
-				"featureType": "administrative.locality",
-				"elementType": "labels.text.fill",
-				"stylers": [
-				{
-					"color": "#bdbdbd"
-				}
-				]
-			},
-			{
-				"featureType": "poi",
-				"elementType": "labels.text.fill",
-				"stylers": [
-				{
-					"color": "#757575"
-				}
-				]
-			},
-			{
-				"featureType": "poi.park",
-				"elementType": "geometry",
-				"stylers": [
-				{
-					"color": "#181818"
-				}
-				]
-			},
-			{
-				"featureType": "poi.park",
-				"elementType": "labels.text.fill",
-				"stylers": [
-				{
-					"color": "#616161"
-				}
-				]
-			},
-			{
-				"featureType": "poi.park",
-				"elementType": "labels.text.stroke",
-				"stylers": [
-				{
-					"color": "#1b1b1b"
-				}
-				]
-			},
-			{
-				"featureType": "road",
-				"elementType": "geometry.fill",
-				"stylers": [
-				{
-					"color": "#2c2c2c"
-				}
-				]
-			},
-			{
-				"featureType": "road",
-				"elementType": "labels.text.fill",
-				"stylers": [
-				{
-					"color": "#8a8a8a"
-				}
-				]
-			},
-			{
-				"featureType": "road.arterial",
-				"elementType": "geometry",
-				"stylers": [
-				{
-					"color": "#373737"
-				}
-				]
-			},
-			{
-				"featureType": "road.highway",
-				"elementType": "geometry",
-				"stylers": [
-				{
-					"color": "#3c3c3c"
-				}
-				]
-			},
-			{
-				"featureType": "road.highway.controlled_access",
-				"elementType": "geometry",
-				"stylers": [
-				{
-					"color": "#4e4e4e"
-				}
-				]
-			},
-			{
-				"featureType": "road.local",
-				"elementType": "labels.text.fill",
-				"stylers": [
-				{
-					"color": "#616161"
-				}
-				]
-			},
-			{
-				"featureType": "transit",
-				"elementType": "labels.text.fill",
-				"stylers": [
-				{
-					"color": "#757575"
-				}
-				]
-			},
-			{
-				"featureType": "water",
-				"elementType": "geometry",
-				"stylers": [
-				{
-					"color": "#000000"
-				}
-				]
-			},
-			{
-				"featureType": "water",
-				"elementType": "labels.text.fill",
-				"stylers": [
-				{
-					"color": "#3d3d3d"
-				}
-				]
-			}
-			]
-		
-        });
-      var marker = new google.maps.Marker({
-          position: {lat: 41.387663, lng: 2.126680},
-          map: map,
-          icon: marker_url
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgMQX55aE8vg-HNxht7VOEjVGt2efrtnE&callback=initMap"
-    async defer></script>
 	<script src="js/scripts.min.js"></script>
 
 </body>
