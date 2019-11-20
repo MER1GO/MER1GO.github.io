@@ -1,0 +1,31 @@
+h1, h2, h3, h4, h5, h6{
+	display: inline-block;
+	color: #666;
+	border-bottom: 1px solid black;
+	margin: 20px 0px;
+	margin-bottom: 10px;
+	voice-family: paul;
+	stress: 20;
+	richness: 90;
+	cue-before: url("ping.au");
+	cursor: crosshair;
+
+}
+h1{
+	font-size: 30px;
+}
+h2{
+	font-size: 28px;
+}
+h3{
+	font-size: 26px;
+}
+h4{
+	font-size: 24px;
+}
+h5{
+	font-size: 22px;
+}
+h6{
+	font-size: 20px;
+}

@@ -1,0 +1,11 @@
+#gallery{
+	text-align: center;
+}
+#gallery img{
+	min-width: 960px;
+	width: 80%;
+}
+img{
+	width: 80%;
+	max-width: 500px;
+}
