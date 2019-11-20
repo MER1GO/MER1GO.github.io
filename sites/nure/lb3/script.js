@@ -35,22 +35,7 @@ USER.is_old = function(){
 	return this.age > 70
 }
 
-var LANGS = ['Al Salaam a’alaykum','Barev','Zdraveite',
-		  'Nei Hou', 'Bok','Dobry den', 'Goddag',
-		'Hallo', 'Tere', 'Terve', 'Bonjour',
-		'Guten Tag', 'Kalimera', 'Aloha',
-		'Shalom','Hallo','Buon giorno',	'Konnichiwa',
-		'Annyong ha shimnikka', 'Labas', 'Ni Hao',
-		'Ba’ax ka wa’alik',	'Sekoh', 'God dag']
-var i = 0
-function setDate(){
-	if (i==LANGS.length-1){
-			i = 0
-		}
-	i++
-	document.getElementById('date').innerHTML = LANGS[i]
-}
-setInterval(setDate, 70)
+USER.is_old() // false
 
 h2 = document.getElementById('add')
 h2.onclick = function(){

@@ -1,19 +1,5 @@
 
-var im = document.querySelectorAll('img')
-for(var i=0; i<im.length;i++){
-	im[i].onclick = function(){
-		src = this.getAttribute('src')
-		m = document.getElementById('mask')
-		document.querySelector('#mask div').style.background = 'url("'+src+'") center center no-repeat'
-		m.style.display = 'block'
-		document.body.style.overflow = 'hidden'
-	}
-}
 
-document.getElementById('exit').onclick = function(){
-	document.getElementById('mask').style.display = 'none'
-	document.body.style.overflow = 'auto'
-}
 
 
 function Plugin(){
