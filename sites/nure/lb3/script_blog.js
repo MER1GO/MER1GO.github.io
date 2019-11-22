@@ -21,14 +21,23 @@ document.getElementById('valid').onclick = function(){
 	em = document.getElementById('email_f')
 	re_ph = /[+][0-9]{3}[-][0-9]{2}[-][0-9]{3}[-][0-9]{4}/
 	re_em = /[a-zA-Z0-9_@]+@[a-zA-Z0-9]+\.[a-zA-Z]/
-	if(!re_ph.test(ph.value)||ph.value.includes('00-000-0000')||ph.value.includes('000-0000')){
+	if(!re_ph.test(ph.value)||ph.value.includes('00-000-0000')||ph.value.includes('000-0000')||ph.value.length==0){
 		document.getElementById('phone_l').style.color = 'red'
+		if(ph.value.length==0){
+			alert("U must enter your phone")
+		}
+	}
+	else if(ph.value.length==0){
+		alert("U must enter your phone")
 	}
 	else{
 		document.getElementById('phone_l').style.color = 'black'
 	}
-	if(!re_em.test(em.value)||(em.value.split('.')[1].length>3)||(em.value.split('.')[1].length<2)){
+	if(!re_em.test(em.value)||(em.value.split('.')[1].length>3)||(em.value.split('.')[1].length<2)||em.value.length==0){
 		document.getElementById('email_l').style.color = 'red'
+		if(em.value.length==0){
+			alert("U must enter your email")
+		}
 	}
 	else{
 		document.getElementById('email_l').style.color = 'black'
