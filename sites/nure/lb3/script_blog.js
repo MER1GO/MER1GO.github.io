@@ -20,14 +20,14 @@ document.getElementById('valid').onclick = function(){
 	ph = document.getElementById('phone_f')
 	em = document.getElementById('email_f')
 	re_ph = /[+][0-9]{3}[-][0-9]{2}[-][0-9]{3}[-][0-9]{4}/
-	re_em = /\S+@\S+\.\S+/
-	if(!re_ph.test(ph.value)){
+	re_em = /[a-zA-Z0-9_@]+@[a-zA-Z0-9]+\.[a-zA-Z]/
+	if(!re_ph.test(ph.value)||ph.value.includes('00-000-0000')||ph.value.includes('000-0000')){
 		document.getElementById('phone_l').style.color = 'red'
 	}
 	else{
 		document.getElementById('phone_l').style.color = 'black'
 	}
-	if(!re_em.test(em.value)){
+	if(!re_em.test(em.value)||(em.value.split('.')[1].length>3)||(em.value.split('.')[1].length<2)){
 		document.getElementById('email_l').style.color = 'red'
 	}
 	else{
