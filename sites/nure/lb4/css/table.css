@@ -1,0 +1,10 @@
+.blog tr{
+	border: 1px solid #000;
+}
+tr:nth-child(2n){
+	background: yellow;
+}
+.blog td{
+	border: 1px solid #000;
+	vertical-align: middle;
+}
