@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="blog">
+   <xs:complexType>
+      <xs:sequence>
+      	<xs:element name="post">
+   			<xs:complexType>
+      			<xs:sequence>
+			        <xs:element name="author" type="xs:string" use="required"/>
+			        <xs:element name="date" type="xs:date" use="required"/>
+			        <xs:element name="topic" type="xs:string" use="required"/>
+         				<xs:element name="tags">
+         					<xs:complexType>
+      							<xs:sequence>
+      								<xs:element name="tag" type="xs:string"/>
+      							</xs:sequence>
+      						</xs:complexType>
+         				</xs:element>
+         				<xs:element name="comms">
+         					<xs:complexType>
+      							<xs:sequence>
+				      				<xs:element name="comm_author" type="xs:string" use="required"/>
+				      				<xs:element name="comm_date" type="xs:date" use="required"/>
+				      				<xs:element name="comm_text" type="xs:string" use="required"/>
+      							</xs:sequence>
+      						</xs:complexType>
+         				</xs:element>
+         				<xs:element name="title" type="xs:string"/>
+         				<xs:element name="content" type="xs:string" use="required"/>
+         			</xs:sequence>
+  				</xs:complexType>
+			</xs:element>
+      </xs:sequence>
+   </xs:complexType>
+</xs:element>
+</xs:schema>

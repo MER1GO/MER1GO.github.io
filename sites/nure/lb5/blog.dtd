@@ -1,0 +1,40 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT post (author,date,topic?,tags*,comms*,title?,content)>
+
+
+<!ELEMENT author (#PCDATA)>
+
+
+<!ELEMENT date (#PCDATA)>
+
+
+<!ELEMENT topic (#PCDATA)>
+
+
+<!ELEMENT tags (tag)+>
+
+
+<!ELEMENT comms (comm_author,comm_date,comm_reply_to,comm_text)>
+
+
+<!ELEMENT title (#PCDATA)>
+
+
+<!ELEMENT content (#PCDATA)>
+
+
+<!ELEMENT tag (#PCDATA)>
+
+
+<!ELEMENT comm_author (#PCDATA)>
+
+
+<!ELEMENT comm_date (#PCDATA)>
+
+
+<!ELEMENT comm_reply_to (#PCDATA)>
+
+
+<!ELEMENT comm_text (#PCDATA)>
+
